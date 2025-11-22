@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="First"></div>
+    <div class="cursor">
+    </div>
+    <nav>       
+        <ul class="sidebar" onclick="HideSideBar()">
+            <li><a class="text-side" href="#First"><p class="textos">Domů</p></a></li>
+            <li><a class="text-side" href="#second"><p class="textos">Kdo jsem</p></a></li>
+            <li><a class="text-side" href="#third"><p class="textos">Projekty</p></a></li>
+            <li><a class="text-side" href="#firth"><p class="textos">Kontakt</p></a></li>
+            <li  onclick="HideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#ffffffcc"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        </ul>
+        <ul>
+            <li id="text"class="menu-button" onclick="ShowSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px " fill="#252525"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <section class="firstPage">
+
+
+        <div class="first">
+            <p class="MartinMega">Martin Mega</p>
+            <hr class="cara1">
+            <p class="MyName">My name is</p>
+            <div id="scroll-wrapper">
+                <div id="scroll-wrapper-inner">
+                <div id="scroll-title">
+                  Scroll
+                </div>
+               <div id="scroll-down">
+              </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+
+
+    <section class="WelcomeText" >
+        <div class="Welcome1">
+            <p class="Welcome">WELCOME</p>
+            <p class="Tomy">TO MY</p>
+            <p class="Website">WEBSITE</p>
+        </div>
+        <div class="About" id="second">>
+        <p class="Kdo">KDO JSEM</p>
+        <hr class="KdoHr">
+        <p class="AboutMe">Jmenuji se Martin, je mi 21 let a pocházím z Dubňan u Hodonína. Momentálně studuji Softwarové inženýrství na Univerzitě Tomáše Bati ve Zlíně. Střední školu jsem absolvoval v Hodoníně na SŠPU, obor technické lyceum, kde jsem získal solidní základy v matematice, fyzice a informatice, díky kterým jsem se mohl bez problémů vrhnout do vysokoškolského studia.
+
+            Volný čas často věnuji posilování, které mi pomáhá udržet se v kondici a vypnout od každodenních výzev, které přináší škola i projekty. Rád se stále učím nové technologie a postupy v programování a dělám vše proto, abych se posunul blíž k kariéře v IT.</p>
+        <button class="button1" onclick="show()">Klikni</button>
+        <hr class="KdoHr2">
+        </div>
+    </section>
+ 
+
+    <section class="Projects" id="third">
+        <h1 class="Nadpis-h">PROJEKTY</h1>
+        <hr class="nadpis-hr">
+        <p class="Download-info">Po kliknutí začne stahování</p>
+        <div class="Around">
+            <div class="Project-Box1" id="B1">
+                <p class="Project-Box1-Text">Website</p>
+            </div>
+            <hr class="ha">
+            <div class="Project-Box2">
+                <div class="Website-projekt1"><a class="Projekt-Text" href="./projekty/1-smokeone.zip">Projekt 1.</a></div>
+                <div class="Website-projekt2"><a class="Projekt-Text" href="./projekty/6 - kopie - kopie - kopie.zip">Projekt 2.</a></div>
+                <div class="Website-projekt3"><a class="Projekt-Text" href="./projekty/MegaMartin.zip">Projekt 3.</a></div>
+            </div>
+        </div>
+        <hr class="project-hr">
+
+        <div class="Around">
+            <div class="Project-Box2" id="B2">
+                <div class="Website-projekt4"><a class="Projekt-Text" href="./projekty/sifra.zip.zip">Affiní šifra</a></div>
+                <div class="Website-projekt5"><a class="Projekt-Text" href="./projekty/playfair.zip">Playfair šifra</a></div>
+                <div class="Website-projekt6"><a class="Projekt-Text" href="./projekty/mega_adfgvx.zip">Adfgvx šifra</a></div>
+            </div>
+            <hr class="harko">
+            <div class="Project-Box1">
+                <p class="Project-Box1-Text">Python</p>
+            </div>
+        </div>
+        <hr class="project-hr">
+        <div class="Around">
+            <div class="Project-Box1" id="B3">
+                <p class="Project-Box1-Text1">Blender & SQL project</p>
+            </div>
+            <hr class="ha">
+            <div class="Project-Box2">
+                <div class="Website-projekt7"><a class="Projekt-Text" href="./projekty/Konečné video.mp4">Projekt loď</a></div>
+                <div class="Website-projekt8"><a class="Projekt-Text" href="./projekty/Databaze Projekt.txt">Jídelní lístek</a></div>
+            </div>
+        </div>
+        <hr class="project-hr">
+    </section>
+
+
+
+    <section class="Praxe" >
+        <p class="Nadpis-h1">PRAXE?</p>
+        <p class="Nadpis-h2">100</p>
+        <p class="Nadpis-h3">Odhodlání?</p>
+        <p class="Nadpis-h4">0</p>
+        <hr class="project-hr">
+    </section>
+
+    <section class="Contact" id="firth">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <p class="Contactme">Kontakt</p>
+            <div class="Kontakt">
+                <input type="hidden" name="access_key" value="dc28d224-d526-429e-9ca9-92ce45c26eea">
+                
+                <label for="name" class="Kontakt-p">Jméno:</label>
+                <input id="name" class="input1" type="text" name="name" required>
+                
+                <label for="email" class="Kontakt-p">Email:</label>
+                <input id="email" class="input1" type="email" name="email" required>
+                
+                <label for="message" class="Kontakt-p">Zpráva:</label>
+                <textarea id="message" class="input1" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="odeslat">Odeslat</button>
+            </div>
+        </form>
+    </section>
+    
+
+    <section class="konec">
+
+    </section>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

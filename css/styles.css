@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff; /* nebo jiná kontrastní barva */
+        padding:0;
+        margin:0;
+}
+.html{
+    width: 100vw;
+}
+
+
+.firstPage {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/image.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+.first{
+    position: relative;
+    z-index: 1;
+}
+
+.MartinMega {
+    font-family: "Playfair", serif;
+    font-weight: bold;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.cara1{
+    height: 3px;
+    background-color: black;
+    border: black;
+    width: 70vw;
+    animation: caras 2s;
+    overflow-x: hidden;
+}
+
+@keyframes caras {
+    0% {
+        margin-left: 200vw;
+        opacity: 1;
+    }
+}
+
+.MyName{
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair", serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
+.WelcomeText{
+    height: max-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    position: relative;
+    z-index: 2; /* .WelcomeText bude nad .first */
+    overflow: hidden;
+}
+
+.Welcome{
+    font-size: 15vw;
+    color: white;
+    text-align: center;
+}
+
+.Tomy{
+    font-size: 15vw;
+    color: white;
+    text-align: center;
+}
+
+
+.Website{
+    font-size: 15vw;
+    color: white;
+    text-align: center;
+}
+
+.Kdo{
+    font-size: 2vw;
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.KdoHr{
+    height: 1px;
+    width: 50%;
+    margin-top: 4%;
+    background-color: white;
+}
+
+.KdoHr2{
+    height: 1px;
+    width: 50%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: white;
+}
+
+
+.AboutMe{
+    width: 30%;
+    height: max-content;
+    font-size: 1vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.Projects{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Nadpis-h, .Nadpis-h1, .Nadpis-h2, .Nadpis-h3, .Nadpis-h4{
+    font-family: "Playfair", serif;
+    font-weight: lighter;
+    font-size: 8vw;
+    margin-top: 4%;
+}
+
+
+.nadpis-hr{
+        height: 3px;
+        background-color: black;
+        border: black;
+        width: 90%;
+}
+
+
+.Download-info{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.Around{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.project-hr{
+    height: 1px;
+    background-color: black;
+    border: black;
+    width: 80%;
+    margin: 10px;
+}
+
+.Project-Box1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+.harko{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Project-Box2{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90%;
+    margin-top: 2.5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden
+;}
+.Project-Box1-Text{
+    font-family: "PP Editorial Old";
+    font-weight: lighter;
+    font-size: 7vw;
+}
+
+
+.Project-Box1-Text1{
+    font-family: "PP Editorial Old";
+    font-weight: lighter;
+    font-size: 5vw;
+}
+
+.About {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+}
+
+
+.Welcome1{
+    background-color: transparent;
+}
+
+.Praxe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.no-scroll {
+    overflow: hidden;
+  }
+
+nav a{
+    padding: 0 1vw;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    display: flex;
+    font-weight: Bold;
+    color: white;
+    list-style-type: none;
+    overflow: hidden;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+}
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair", serif;
+    font-weight: lighter;
+    font-size: 5vw;
+    transition: 1s;
+}
+
+.textos{
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+}
+.textos:hover{
+    border-bottom: solid 1px white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    justify-content: flex-end;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.cursor{
+    width: 30px;
+    height: 30px;
+    border: 1px solid  white;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 48%;
+    left: 50%;
+    mix-blend-mode: difference;
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: 0.05s; /* Toto zajistí, že cursor nebude blokovat klikání */
+
+}
+
+
+.button1{
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 5vw;
+    height: 3vh;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.button1:hover{
+    scale: 1.1;
+}
+
+
+
+
+@media(max-width: 1200px){
+
+    .textos{
+        margin-top: 10%;
+        font-size: 20vw;
+        width: 80%;
+    }
+    .button1{
+        display: none;
+    }
+
+    .About{
+        height: 100vh;
+    }
+
+    #scroll-title{
+        margin-top: 0%;
+    }
+    .AboutMe{
+        width: 90%;
+        font-size: 4vw;
+    }
+    .MartinMega{
+        font-size: 15vw;
+    }
+    .MyName{
+        font-size: 5vw;
+    }
+    .cara1{
+        width: 100%;
+    }
+    .Kdo{
+        font-size: 8vw;
+    }
+    .KdoHr, .KdoHr2{
+        width: 80%;
+    }
+
+    .Kontakt-p{
+        padding: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .Around{
+        flex-direction: column;
+    }
+    .Project-Box1{
+        width: 100%;
+        order: 1;
+    }
+    .ha{
+        order: 2;
+    }
+    .Project-Box2{
+        width: 100%;
+        order: 3;
+    }
+    .harko{
+        order: 2;
+    }
+    .Project-Box2{
+        width: 100%;
+        margin: 20px auto ;
+    }
+    .button{
+        display: none;
+    }
+    .cursor{display: none;}
+    
+}
+@media(max-width: 800px){
+    .input1{
+        width: 40vh !important;
+    }
+    .AboutMe{
+        width: 90%;
+        font-size: 5vw;
+    }
+    #scroll-title{
+        margin-top: 10vh;
+    }
+    #scroll-wrapper {
+        height: 15vh;
+    }
+}
+
+@media(max-width: 400px){
+    .AboutMe{
+        width: 90%;
+        font-size: 5vw;
+    }
+    #scroll-title{
+        margin-top: 10vh;
+    }
+    #scroll-title{
+        font-size: 10px !important;
+    }
+    .input1{
+        height: 5vh ;
+    }
+}
+
+
+#scroll-wrapper {
+    display: table;
+    margin-top: 10vh;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background-color: none;
+    animation: Appear 2s ease-in-out 3s forwards;
+  }
+
+  @keyframes Appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #scroll-wrapper-inner {
+    display: table-cell;
+    vertical-align:middle;
+    padding: 50px;
+    width:100%;
+    height:100%;
+    overflow: clip;
+  }
+  .Projekt-Text{
+    
+    text-decoration: none;
+    color: white;
+  }
+  .text-side{
+    margin: 1%;
+  }
+  
+  #scroll-down {
+      display: block;
+      position: relative;
+      padding-top: 10vh;
+      text-align:center;
+      overflow-x: visible;
+  }
+  
+  #scroll-title {
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    font-family: "raleway";
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:0.4em;
+    text-align:center;
+    transform: rotate(90deg);
+    margin-bottom: 45px;
+    margin-top: 5vh;
+  }
+  #scroll-down::before {
+      -webkit-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* Safari 4+ */
+      
+      -moz-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* Fx 5+ */
+      
+      -o-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* Opera 12+ */
+      
+      animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
+      /* IE 10+, Fx 29+ */
+      
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -1px;
+      width: 2px;
+      height: 90px;
+      background: black;
+      content: ' ';
+  }
+  @-webkit-keyframes elasticus {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+  @-moz-keyframes elasticus {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+  @-o-keyframes elasticus {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+  @keyframes elasticus {
+      0% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+      50% {
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          -moz-transform-origin: 0% 0%;
+          -o-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      50.1% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          transform: scale(1, 1);
+      }
+      100% {
+          -webkit-transform-origin: 0% 100%;
+          -ms-transform-origin: 0% 100%;
+          -moz-transform-origin: 0% 100%;
+          -o-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+          -webkit-transform: scale(1, 0);
+          -ms-transform: scale(1, 0);
+          -moz-transform: scale(1, 0);
+          -o-transform: scale(1, 0);
+          transform: scale(1, 0);
+      }
+  }
+
+
+
+.Website-projekt1, .Website-projekt2, .Website-projekt3, .Website-projekt4, .Website-projekt5, .Website-projekt6, .Website-projekt7,  .Website-projekt8 {
+    width: 80%;
+    height: 20%;
+    margin: 5%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Contactme {
+    font-size: 8vw;
+    margin-top: 5%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Kontakt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.input1 {
+    height: 5vh !important;
+    width: 30vw;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    padding: 5px;
+}
+
+textarea.input1 {
+    resize: none;
+    height: auto;
+}
+
+.odeslat {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+    border: none;
+}
+
+.odeslat:hover {
+    transform: scale(1.1);
+}
+
+.Kontakt-p {
+    font-family: "Playfair", serif;
+    font-weight: lighter;
+    font-size: 4vw;
+    width: 40%;
+}
+
+.konec{
+    width: 100%;
+    height: 10vh;
+}
